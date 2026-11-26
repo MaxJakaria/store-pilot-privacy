@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Delete Account — Store Pilot</title>
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --surface: #ffffff;
+      --text: #0f172a;
+      --muted: #475569;
+      --border: #e2e8f0;
+      --accent: #2563eb;
+      --accent-soft: #eff6ff;
+      --danger: #dc2626;
+      --danger-soft: #fef2f2;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0b1120;
+        --surface: #111827;
+        --text: #f1f5f9;
+        --muted: #94a3b8;
+        --border: #1e293b;
+        --accent: #60a5fa;
+        --accent-soft: #172554;
+        --danger: #f87171;
+        --danger-soft: #450a0a;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      padding: 24px 16px 48px;
+    }
+    .container {
+      max-width: 780px;
+      margin: 0 auto;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 32px 28px;
+      box-shadow: 0 8px 30px rgba(15, 23, 42, 0.06);
+    }
+    .badge {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--danger);
+      background: var(--danger-soft);
+      padding: 4px 10px;
+      border-radius: 999px;
+      margin-bottom: 10px;
+    }
+    h1 {
+      margin: 0 0 6px;
+      font-size: 26px;
+      line-height: 1.25;
+    }
+    .meta {
+      margin: 0 0 22px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    h2 {
+      margin: 24px 0 8px;
+      font-size: 18px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 6px;
+    }
+    p, li {
+      color: var(--muted);
+      font-size: 15px;
+    }
+    ol, ul {
+      padding-left: 20px;
+      margin: 8px 0 14px;
+    }
+    li { margin-bottom: 6px; }
+    strong { color: var(--text); }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .btn {
+      display: inline-block;
+      margin-top: 8px;
+      background: var(--danger);
+      color: #ffffff;
+      font-weight: 600;
+      font-size: 14px;
+      padding: 10px 18px;
+      border-radius: 10px;
+      text-decoration: none;
+    }
+    .btn:hover { opacity: 0.92; text-decoration: none; }
+    .footer {
+      margin-top: 32px;
+      padding-top: 16px;
+      border-top: 1px solid var(--border);
+      font-size: 13px;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <span class="badge">Store Pilot · Account Deletion</span>
+    <h1>Account &amp; Data Deletion Request</h1>
+    <p class="meta">
+      <strong>App:</strong> Store Pilot &nbsp;|&nbsp;
+      <strong>Developer:</strong> SOLID Tech &nbsp;|&nbsp;
+      <strong>Package ID:</strong> com.solidtech.storepilot
+    </p>
+
+    <p>
+      You have full control over your <strong>Store Pilot</strong> account and shop data. You can permanently delete your account either directly inside the app (instant) or by submitting a deletion request below.
+    </p>
+
+    <h2>Option 1: Delete Immediately Inside the App</h2>
+    <ol>
+      <li>Open the <strong>Store Pilot</strong> app and sign in to your account.</li>
+      <li>Tap the profile icon at the top-right corner to open the menu, then select <strong>My Profile</strong>.</li>
+      <li>Scroll to the bottom and tap <strong>Delete Account</strong>.</li>
+      <li>Confirm deletion when prompted. Your account and all store records are permanently erased immediately.</li>
+    </ol>
+
+    <h2>Option 2: Request Deletion via Email (Without App Access)</h2>
+    <p>
+      If you have uninstalled Store Pilot or cannot access your account, you can request full account and data deletion via email:
+    </p>
+    <ol>
+      <li>Send an email from your <strong>registered Store Pilot email address</strong> to <a href="mailto:jakaria.cse.pust@gmail.com?subject=Delete%20Store%20Pilot%20Account&body=Please%20permanently%20delete%20my%20Store%20Pilot%20account%20and%20all%20associated%20store%20data.%0A%0ARegistered%20Email%3A%20">jakaria.cse.pust@gmail.com</a>.</li>
+      <li>Use the subject line: <strong>Delete Store Pilot Account</strong>.</li>
+      <li>Include your registered email address and shop name so we can verify ownership.</li>
+      <li>We will verify and permanently delete your account and associated data within <strong>7 business days</strong>.</li>
+    </ol>
+    <a class="btn" href="mailto:jakaria.cse.pust@gmail.com?subject=Delete%20Store%20Pilot%20Account&body=Please%20permanently%20delete%20my%20Store%20Pilot%20account%20and%20all%20associated%20store%20data.%0A%0ARegistered%20Email%3A%20">Request Account Deletion via Email</a>
+
+    <h2>What Data Is Deleted</h2>
+    <p>Deleting your Store Pilot account permanently erases:</p>
+    <ul>
+      <li>Your authentication account (email/password and linked Google Sign-In credentials in Firebase Authentication).</li>
+      <li>Your user profile and store profile (shop name, owner name, phone numbers, and address).</li>
+      <li>All store operational records: products, stock batches, sales records, invoices, due balances, return records, product images, cost-code settings, and counters.</li>
+    </ul>
+
+    <h2>Data Retention</h2>
+    <p>
+      Once account deletion is completed, <strong>no personal or store data is retained</strong> in our active Firebase Authentication or Cloud Firestore databases.
+    </p>
+
+    <div class="footer">
+      <a href="./">&larr; Back to Privacy Policy</a> &nbsp;&middot;&nbsp; &copy; 2026 SOLID Tech · Store Pilot
+    </div>
+  </main>
+</body>
+</html>
